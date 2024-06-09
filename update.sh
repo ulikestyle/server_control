@@ -7,6 +7,8 @@ echo "The script is prepared for Ubuntu machines. If you are using another opera
 echo "⏳Processing..."
 sleep 5  # Add a 5-second delay
 
+sudo su - root
+
 # Stop the ceremonyclient service
 service ceremonyclient stop
 
@@ -16,9 +18,8 @@ apt install gawk -y #incase it is not installed
 # Step 1:Download Binary
 echo "⏳ Downloading New Release v1.4.19"
 cd  ~/ceremonyclient
+git remote set-url origin https://source.quilibrium.com/quilibrium/ceremonyclient.git || git remote set-url origin https://git.quilibrium-mirror.ch/agostbiro/ceremonyclient.git
 git pull
-# git remote set-url origin https://source.quilibrium.com/quilibrium/ceremonyclient.git || git remote set-url origin https://git.quilibrium-mirror.ch/agostbiro/ceremonyclient.git
-# git pull
 git checkout release-cdn
 
 # Get the current user's home directory
