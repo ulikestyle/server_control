@@ -4,6 +4,7 @@ worker=$2
 echo $worker
 echo $account
 
+sudo rm -rf run_aleo_apool_gpu*
 sudo rm -rf aleo_gpu
 sudo mkdir aleo_gpu
 cd aleo_gpu
