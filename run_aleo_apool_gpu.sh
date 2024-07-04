@@ -8,6 +8,7 @@ sudo rm -rf run_aleo_apool_gpu*
 sudo rm -rf aleo_gpu
 sudo mkdir aleo_gpu
 cd aleo_gpu
+sudo touch aleo.log
 
 sudo wget https://github.com/apool-io/apoolminer/releases/download/v1.6.6/apoolminer_linux_v1.6.6.tar
 sudo tar -xvf apoolminer_linux_v1.6.6.tar
