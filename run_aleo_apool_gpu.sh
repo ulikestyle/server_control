@@ -10,7 +10,6 @@ cd aleo_gpu
 
 sudo wget https://github.com/apool-io/apoolminer/releases/download/v1.6.6/apoolminer_linux_v1.6.6.tar
 sudo tar -xvf apoolminer_linux_v1.6.6.tar
-touch aleo.log
 
 if ps aux | grep 'apoolminer' | grep -q 'apool.io'; then
     echo "ApoolMiner already running."
